@@ -1,10 +1,10 @@
 [package]
-name = "librusthelloworld"
+name = "rusthelloworld"
 version = "0.1.0"
 edition = "2021"
 
 [lib]
-name = "librusthelloworld"
+name = "rusthelloworld"
 crate-type = ["rlib", "cdylib"]
 
 [features]
