@@ -1,0 +1,19 @@
+[package]
+name = "librusthelloworld"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "librusthelloworld"
+crate-type = ["rlib", "cdylib"]
+
+[features]
+c-headers = ["safer-ffi/headers"]
+
+[build-dependencies]
+cbindgen = "0.24.3"
+
+[dependencies]
+cbindgen = "0.24.3"
+libc = "0.2.138"
+safer-ffi = { version = "*", features = ["proc_macros"] }
